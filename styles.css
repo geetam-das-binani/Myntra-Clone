@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+/* styling navbar  */
+header {
+    background: rgb(250, 255, 255);
+    position: sticky;
+    top: 0;
+
+
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: .5rem;
+
+}
+
+nav .left img {
+    width: 6.5%;
+    margin-right: .8rem;
+}
+
+nav .right {
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 .475rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(49, 47, 47);
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+nav ul li:hover {
+    color: black;
+    transition: all .4s ease-in;
+    cursor: pointer;
+}
+
+
+.right .details {
+    margin: 0 .2rem;
+}
+
+.right>input {
+    width: 15vw;
+    border: none;
+    appearance: none;
+    outline: none;
+
+    padding: .4rem .5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0px rgb(16, 16, 16);
+
+
+}
+
+
+.right .details>span {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(49, 47, 47);
+    padding: .3rem;
+
+}
+
+.right .details>span:hover {
+    color: black;
+    transition: all .4s ease-in;
+    cursor: pointer;
+}
+
+.section1 img {
+
+    width: 100%;
+    height: 45vh;
+    border-radius: 5px;
+
+    padding-top: .5rem;
+}
+
+.section2 {
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-top: .5rem;
+ 
+}
+
+.section2 img {
+    width: 15vw;
+    aspect-ratio: .5/.5;
+     padding: .5rem;
+    border-radius: 5px; 
+    
+}
+.section2 div{
+    
+    margin: 0 1rem;
+}
+.section2  p{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    background: rgb(255, 255, 254);
+    font-weight: bolder;
+}
+
+@media screen and (max-width:675px) {
+
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .left {
+        justify-content: center;
+    }
+
+    nav .left img {
+        width: 8%;
+        margin-right: none;
+    }
+
+    nav ul li {
+        font-size: .69rem;
+        padding: 0 .3rem;
+    }
+
+    nav .right {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .right>input {
+        width: 50vw;
+        margin-top: .5rem;
+    }
+
+    .right .details>span {
+        padding: .5rem;
+    }
+    .section2 div{
+      
+        margin: 0 .5rem;
+    }
+
+
+
+}

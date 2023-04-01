@@ -1,0 +1,10 @@
+.container{
+    padding: 0  4vw;
+}
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
